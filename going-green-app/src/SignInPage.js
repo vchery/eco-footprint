@@ -3,12 +3,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from './AuthContext'; // Import useAuth hook
+import img from './assets/trees.jpg';
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url(${img});
+  background-size: 1300px;
   background-color: ${(props) => props.theme.colors.background};
 `;
 

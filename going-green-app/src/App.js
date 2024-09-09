@@ -10,6 +10,7 @@ import Dashboard from './Dashboard';
 import LogActivityPage from './LogActivityPage';
 import FAQPage from './FAQPage';
 import ArticlesPage from './ArticlesPage';
+import LandingPage from './LandingPage'
 import BottomRibbon from './BottomRibbon'; // Import the BottomRibbon component
 import { AuthProvider, useAuth } from './AuthContext'; // Import AuthContext
 import { theme } from './theme';
@@ -26,6 +27,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Router>
         <Routes>
+          <Route path="/" element={<LandingPage />} />
           <Route path="/signin" element={<SignInPage />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/forgot-password" element={<ForgotPasswordPage />} />

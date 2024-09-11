@@ -11,7 +11,7 @@ const Container = styled.div`
   align-items: center;
   height: 100vh;
   background-image: url(${img});
-  background-size: 1300px;
+  background-size: 1510px;
   background-color: ${(props) => props.theme.colors.background};
 `;
 

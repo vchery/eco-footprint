@@ -43,7 +43,7 @@ app.post('/signup', async (req, res) => {
     // Insert the new user into the database
     console.log('Inserting user with email:', email);
     const insertResult = await db.executeQuery(
-      'INSERT INTO users (USER_ID, EMAIL, PASSWORD_HASH) VALUES (USER_SEQ.NEXTVAL, :email, :password)',
+      'INSERT INTO users (EMAIL, PASSWORD_HASH) VALUES (:email, :password)',
       [email, hashedPassword]
     );
 
